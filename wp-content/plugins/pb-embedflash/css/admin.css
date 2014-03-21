@@ -1,0 +1,45 @@
+div label.blocktext{display:block; width:200px; float:left;}
+div label.indent{margin-left:23px;}
+div.postbox div.inside {font-size:11px !important;line-height: 115% !important;}
+div.postbox {min-width: 0px !important}
+div input.textfield, div select.textfield{width:340px;}
+div.inside ul{font-size:100%;list-style-type:disc;margin-left:20px;}
+.radio{display:inline; clear:both}
+.pick{display:inline; width:16px; margin-right:5px; height:16px; border:1px solid #444}
+#colorpicker{border-collapse:collapse; position:absolute; left:300px; top:600px; background-color:#FFF; border-top:1px solid #EEE; border-left:1px solid #EEE; border-right:1px solid #999; border-bottom:1px solid #999; display:none; padding:5px}
+#colorpicker a{display:block; width:15px; height:15px; margin-bottom:1px; margin-right:1px; font-size:10px}
+
+div.mediabox{position:fixed; display:none; z-index:99; background:#DFDFDF url(../../../../wp-admin/images/gray-grad.png) repeat-x scroll left top; border: #ACACAC 1px solid; width:485px; left:0px; top:0px}
+div.mediabox  ul{list-style-type:none; display:block; padding:1px; margin:1px}
+div.mediabox  ul li{height:30px}
+div.mediabox  ul li label{display:block; float:left; width:100px; margin-left:20px}
+div.mediabox  ul li input{float:left; width:300px}
+
+div#media div .media-id{width:25px; float:left}
+div#media div ul{list-style-type:none; float:left; display:block; width:500px; padding:1px; margin:1px; text-align:left}
+div#media div ul li div{font-size:75%; width:450px; overflow:hidden; word-wrap:break-word}
+div#media div ul li label{width:100px}
+div#media div ul li ul{list-style-type:none; float:left; display:block; width:500px; padding:1px; margin:1px; text-align:left}
+div#media div ul li ul li div{width:450px; overflow:hidden; word-wrap:break-word}
+div#media div ul li ul li label{width:100px; margin-left:18px}
+div#media div ul li, div#media div ul li ul li{height:25px}
+div#media div .media-options{width:140px; float:right}
+div#media div .media-options .delete:hover{background-color:#A00}
+div#media div .media-options .saveedit{background-color:#F7F90B}
+
+div#playlists div div{display:inline; float:left; text-align:left; font-size:100%}
+div#playlists div .playlists-id{width:50px; height:60px}
+div#playlists div .media-box{width:100%; height:20px}
+div#playlists div .media-box div{overflow:hidden}
+.playlists-title{width:250px}
+.playlists-attributes{width:405px}
+div#playlists div .playlists-ids{width:555; float:left; display:block; /* background-color:#EAF6FC; */}
+div#playlists div .playlists-options{width:140px; float:right}
+div#playlists div .playlists-options .delete:hover{background-color:#A00}
+div#playlists div .playlists-options .saveedit{background-color:#F7F90B}
+
+div#media_items{}
+div#media_items div.items{width:100%; height:30px; border:1px solid #00000; font-size:100%}
+div#media_items div .media_items-id{width:50px; float:left}
+div#media_items div .media_items-title{width:275px; float:left}
+div#media_items div .media_items-options{width:400px; float:right; text-align:right}

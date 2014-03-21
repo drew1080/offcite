@@ -1,0 +1,935 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pb-embedFlash\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2008-07-25 19:24+0100\n"
+"Last-Translator: Pascal Berkhahn <novayuna@googlemail.com>\n"
+"Language-Team: Pascal Berkhahn <novayuna@googlemail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: Q:\\Webseiten\\SVN\\pb-embedflash\\\n"
+"X-Poedit-SearchPath-0: trunk\n"
+
+#: trunk/inc/inc.adminpanel.php:20
+msgid "Settings updated."
+msgstr "Einstellungen aktualisiert."
+
+#: trunk/inc/inc.adminpanel.php:59
+#: trunk/inc/inc.adminpanel.php:69
+msgid "open"
+msgstr "&ouml;ffnen"
+
+#: trunk/inc/inc.adminpanel.php:60
+#: trunk/inc/inc.adminpanel.php:69
+msgid "close"
+msgstr "schlie&szlig;en"
+
+#: trunk/inc/inc.adminpanel.php:111
+msgid "Menu"
+msgstr "Men&uuml;"
+
+#: trunk/inc/inc.adminpanel.php:113
+#: trunk/inc/inc.mediamanager.php:89
+#: trunk/inc/inc.mediamanager.php:187
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: trunk/inc/inc.adminpanel.php:114
+msgid "Media manager"
+msgstr "Media-Manager"
+
+#: trunk/inc/inc.adminpanel.php:115
+#: trunk/inc/inc.mediamanager.php:87
+#: trunk/inc/inc.mediamanager.php:185
+msgid "Manage media"
+msgstr "Media verwalten"
+
+#: trunk/inc/inc.adminpanel.php:116
+#: trunk/inc/inc.mediamanager.php:88
+#: trunk/inc/inc.mediamanager.php:186
+msgid "Manage playlists"
+msgstr "Playlists verwalten"
+
+#: trunk/inc/inc.adminpanel.php:120
+msgid "About this plugin"
+msgstr "&Uuml;ber dieses Plugin"
+
+#: trunk/inc/inc.adminpanel.php:123
+msgid "by"
+msgstr "von"
+
+#: trunk/inc/inc.adminpanel.php:124
+msgid "Version"
+msgstr "Version"
+
+#: trunk/inc/inc.adminpanel.php:126
+msgid "Plugin site"
+msgstr "Plugin-Seite"
+
+#: trunk/inc/inc.adminpanel.php:127
+#: trunk/inc/inc.functions.php:881
+#: trunk/inc/inc.mediamanager.php:106
+#: trunk/inc/inc.mediamanager.php:146
+msgid "Author"
+msgstr "Autor"
+
+#: trunk/inc/inc.adminpanel.php:128
+msgid "Post bugs or questions"
+msgstr "Bugs oder Fragen posten"
+
+#: trunk/inc/inc.adminpanel.php:132
+msgid "Donate"
+msgstr "Spenden"
+
+#: trunk/inc/inc.adminpanel.php:135
+msgid "Thanks for your support!"
+msgstr "Danke f&uuml;r Deine Unterst&uuml;tzung!"
+
+#: trunk/inc/inc.adminpanel.php:139
+#: trunk/inc/inc.adminpanel.php:141
+msgid "Save"
+msgstr "Speichern"
+
+#: trunk/inc/inc.adminpanel.php:151
+msgid "Please choose the method how to embed your flash content"
+msgstr "Bitte w&auml;hlen Sie die Methode zum Einbetten des Flashinhalts aus"
+
+#: trunk/inc/inc.adminpanel.php:154
+msgid "There are currently four options of embedding flash content supported by this plugin:<ul><li>The &lt;object&gt; tag is the safest way because it embeds your flash content in valid XHTML Strict code directly into the source code of the file.</li><li>SWFObject is a JavaScript class, so JavaScript has to be supported and enabled by the browser.</li><li>Shadowbox displays any content like Lightbox does with images: fading out the other content and showing the flash in the middle of the screen.</li><li>Popup just pops up :)</li></ul>"
+msgstr "Dieses Plugin unterst&uuml;tzt momentan vier Optionen zum Einbetten von Flashinhalten:<ul><li>Der &lt;object&gt;-Tag ist die sicherste Variante, da hierbei direkt in den Quelltext der Seite geschrieben wird.</li><li>SWFObject ist eine JavaScript-Klasse, weshalb der Browser JavaScript unterst&uuml;tzen und aktiviert haben muss.</li><li>Shadowbox zeigt jeglichen Inhalt an wie es Lightbox mit Bildern macht: andere Inhalte werden ausgeblendet und nur das Flash wird in der Mitte des Bildschrims angezeigt.</li><li>Ein aufpoppendes Popup :)</li></ul>"
+
+#: trunk/inc/inc.adminpanel.php:157
+msgid "&lt;object&gt; tag"
+msgstr "&lt;object&gt;-Tag"
+
+#: trunk/inc/inc.adminpanel.php:160
+msgid "SWFObject (JavaScript)"
+msgstr "SWFObject (JavaScript)"
+
+#: trunk/inc/inc.adminpanel.php:163
+msgid "SWFObject only on the Internet Explorer (JavaScript)"
+msgstr "SWFObject nur beim Internet Explorer (JavaScript)"
+
+#: trunk/inc/inc.adminpanel.php:166
+msgid "Shadowbox (JavaScript)"
+msgstr "Shadow (JavaScript)"
+
+#: trunk/inc/inc.adminpanel.php:169
+msgid "Popup (JavaScript)"
+msgstr "Popup (JavaScript)"
+
+#: trunk/inc/inc.adminpanel.php:177
+msgid "Main options"
+msgstr "Haupt-Optionen"
+
+#: trunk/inc/inc.adminpanel.php:180
+msgid "Here you can set the default values used for embedding falsh content:"
+msgstr "Hier können Sie die Standardwerte zum Einbetten von Flashinhalten ändern:"
+
+#: trunk/inc/inc.adminpanel.php:181
+msgid "URL to mediaplayer.swf:"
+msgstr "Pfad zu mediaplayer.swf:"
+
+#: trunk/inc/inc.adminpanel.php:183
+#: trunk/inc/inc.adminpanel.php:187
+#: trunk/inc/inc.adminpanel.php:191
+#: trunk/inc/inc.adminpanel.php:195
+#: trunk/inc/inc.adminpanel.php:199
+#: trunk/inc/inc.adminpanel.php:204
+#: trunk/inc/inc.adminpanel.php:208
+#: trunk/inc/inc.adminpanel.php:212
+#: trunk/inc/inc.adminpanel.php:235
+#: trunk/inc/inc.adminpanel.php:239
+#: trunk/inc/inc.adminpanel.php:304
+#: trunk/inc/inc.adminpanel.php:309
+#: trunk/inc/inc.adminpanel.php:314
+#: trunk/inc/inc.adminpanel.php:320
+#: trunk/inc/inc.adminpanel.php:326
+#: trunk/inc/inc.adminpanel.php:332
+#: trunk/inc/inc.adminpanel.php:367
+#: trunk/inc/inc.adminpanel.php:372
+#: trunk/inc/inc.adminpanel.php:398
+#: trunk/inc/inc.adminpanel.php:403
+#: trunk/inc/inc.adminpanel.php:436
+#: trunk/inc/inc.adminpanel.php:441
+#: trunk/inc/inc.adminpanel.php:446
+#: trunk/inc/inc.adminpanel.php:482
+#: trunk/inc/inc.adminpanel.php:486
+#: trunk/inc/inc.adminpanel.php:490
+#: trunk/inc/inc.adminpanel.php:494
+#: trunk/inc/inc.adminpanel.php:498
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:61
+msgid "default"
+msgstr "Standard"
+
+#: trunk/inc/inc.adminpanel.php:185
+msgid "URL to swfobject.js:"
+msgstr "Pfad zu swfobject.js"
+
+#: trunk/inc/inc.adminpanel.php:189
+msgid "URL to shadowbox.js:"
+msgstr "Pfad zu shadowbox.js:"
+
+#: trunk/inc/inc.adminpanel.php:193
+msgid "URL to shadowbox.css:"
+msgstr "Pfad zu shadowbox.css:"
+
+#: trunk/inc/inc.adminpanel.php:197
+msgid "URL to popup.js:"
+msgstr "Pfad zu popup.js:"
+
+#: trunk/inc/inc.adminpanel.php:202
+msgid "Default width:"
+msgstr "Standard-Breite:"
+
+#: trunk/inc/inc.adminpanel.php:206
+msgid "Default height:"
+msgstr "Standard-H&ouml;he:"
+
+#: trunk/inc/inc.adminpanel.php:210
+msgid "Default class:"
+msgstr "Standard-Klasse:"
+
+#: trunk/inc/inc.adminpanel.php:215
+msgid "Set to No if you want to keep all settings (e.g. for updating)."
+msgstr "Setzen Sie dies auf Nein, um alle Einstellungen beim Deaktivieren zu behalten (z.B. beim Updaten)."
+
+#: trunk/inc/inc.adminpanel.php:215
+msgid "Delete settings, media and playlists on plugin deactivation?"
+msgstr "Einstellungen, Media und Playlists beim Deaktivieren des Plugins löschen?"
+
+#: trunk/inc/inc.adminpanel.php:218
+#: trunk/inc/inc.adminpanel.php:245
+#: trunk/inc/inc.adminpanel.php:265
+#: trunk/inc/inc.adminpanel.php:294
+#: trunk/inc/inc.adminpanel.php:455
+#: trunk/inc/inc.adminpanel.php:464
+#: trunk/inc/inc.adminpanel.php:473
+msgid "Yes"
+msgstr "Ja"
+
+#: trunk/inc/inc.adminpanel.php:221
+#: trunk/inc/inc.adminpanel.php:248
+#: trunk/inc/inc.adminpanel.php:268
+#: trunk/inc/inc.adminpanel.php:291
+#: trunk/inc/inc.adminpanel.php:458
+#: trunk/inc/inc.adminpanel.php:467
+#: trunk/inc/inc.adminpanel.php:476
+#: trunk/inc/inc.widgets.php:240
+msgid "No"
+msgstr "Nein"
+
+#: trunk/inc/inc.adminpanel.php:229
+msgid "Messages"
+msgstr "Mitteilungen"
+
+#: trunk/inc/inc.adminpanel.php:232
+msgid "Overwrite default messages."
+msgstr "Standard-Werte überschreiben."
+
+#: trunk/inc/inc.adminpanel.php:233
+msgid "Message if JavaScript is deactivated"
+msgstr "Nachricht, wenn JavaScript deaktiviert ist"
+
+#: trunk/inc/inc.adminpanel.php:235
+#: trunk/inc/inc.functions.php:604
+msgid "Either JavaScript is not active or you are using an old version of Adobe Flash Player. <a href=\"http://www.adobe.com/de/\">Please install the newest Flash Player</a>."
+msgstr "Entweder JavaScript ist nicht aktiviert, oder Sie benutzen eine alte Version von Adobe Flash Player. <a href=\"http://www.adobe.com/de/\">Installieren Sie bitte den aktuellsten Flash Player</a>."
+
+#: trunk/inc/inc.adminpanel.php:237
+msgid "Message for feeds and search results"
+msgstr "Nachricht für Feeds und Suchergebnisse"
+
+#: trunk/inc/inc.adminpanel.php:239
+#: trunk/inc/inc.functions.php:538
+#: trunk/inc/inc.functions.php:607
+#: trunk/inc/inc.options.php:33
+msgid "Please open the article to see the flash file or player."
+msgstr "Bitte den Artikel &ouml;ffnen, um die Flashdatei oder den Flashplayer zu sehen."
+
+#: trunk/inc/inc.adminpanel.php:242
+msgid "Use preview image defined for JW FLV Media Player (f={image=...}) as alternative content for disabled JavaScript?"
+msgstr "Für JW FLV Media Player verwendetes Vorschaubild als Alternativ-Inhalt für deaktiviertes JavaScript nutzen?"
+
+#: trunk/inc/inc.adminpanel.php:256
+msgid "Shadowbox &amp; Popup"
+msgstr "Shadowbox &amp; Popup"
+
+#: trunk/inc/inc.adminpanel.php:259
+msgid "Shadowbox can display likely any content inside an overlay. It is fully compatible to Lightbox!"
+msgstr "Shadowbox kann ziemlich jeden Inhalt in einem Overlay anzeigen. Vollst&auml;ndig zu Lightbox kompatibel!"
+
+#: trunk/inc/inc.adminpanel.php:262
+msgid "Load Shadowbox by default even if there is no flash content displayed, e.g. to make it available for gallery plugins?"
+msgstr "Shadowbox standardm&auml;&szlig;ig laden, auch wenn kein Flash angezeigt wird, z.B. um es Galerie-Scripten zug&auml;nglich zu machen?"
+
+#: trunk/inc/inc.adminpanel.php:273
+msgid "Choose the JavaScript framework to use with Shadowbox:"
+msgstr "W&auml;hle das von Shadowbox zu verwendende JavaScript-Framework:"
+
+#: trunk/inc/inc.adminpanel.php:283
+msgid "included within WordPress"
+msgstr "in WordPress enthalten"
+
+#: trunk/inc/inc.adminpanel.php:284
+msgid "included within pb-embedFlash"
+msgstr "in pb-embedFlash enthalten"
+
+#: trunk/inc/inc.adminpanel.php:288
+msgid "Load JavaScript framework with Shadowbox? (Choose \"No\" if another plugin already loads it.)"
+msgstr "JavaScript-Framework zusammen mit Shadowbox laden? (W&auml;hlen Sie \"Nein\", wenn es ein anderes Plugin bereits l&auml;dt.)"
+
+#: trunk/inc/inc.adminpanel.php:299
+msgid "Shadowbox settings"
+msgstr "Shadowbox-Einstellungen"
+
+#: trunk/inc/inc.adminpanel.php:304
+#: trunk/inc/inc.options.php:47
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:510
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: trunk/inc/inc.adminpanel.php:309
+#: trunk/inc/inc.options.php:48
+msgid "loading"
+msgstr "lade..."
+
+#: trunk/inc/inc.adminpanel.php:452
+msgid "Use a default preview image as link to Shadowbox/the popup instead of text?"
+msgstr "Ein Standard-Vorschaubild als Link zu Shadowbox/zum Popup anstatt Text verwenden?"
+
+#: trunk/inc/inc.adminpanel.php:461
+msgid "Load preview images from YouTube &amp; GameVideos?"
+msgstr "Vorschaubilder von Youtube &amp; GameVideos laden?"
+
+#: trunk/inc/inc.adminpanel.php:470
+msgid "Use this if search results show an excerpt."
+msgstr "Benutzen Sie dies, wenn die Suchergebnisse als Auszug gezeigt werden."
+
+#: trunk/inc/inc.adminpanel.php:470
+msgid "Show a message in search results instead of the Shadowbox/popup link?"
+msgstr "In Suchergebnissen eine Nachricht statt des Shadowbox-/Popup-Links anzeigen?"
+
+#: trunk/inc/inc.adminpanel.php:480
+#: trunk/inc/inc.adminpanel.php:484
+msgid "You can leave this empty! If you use it, set both width &amp; height."
+msgstr "Sie k&ouml;nnen dies leer lassen! Wenn Sie dies nutzen, setzten Sie beide Werte!"
+
+#: trunk/inc/inc.adminpanel.php:480
+msgid "Default image width:"
+msgstr "Standard-Bildbreite:"
+
+#: trunk/inc/inc.adminpanel.php:482
+#: trunk/inc/inc.adminpanel.php:486
+msgid "empty"
+msgstr "leer"
+
+#: trunk/inc/inc.adminpanel.php:484
+msgid "Default image height:"
+msgstr "Standard-Bildh&ouml;he:"
+
+#: trunk/inc/inc.adminpanel.php:488
+msgid "Default preview image:"
+msgstr "Standard-Vorschaubild"
+
+#: trunk/inc/inc.adminpanel.php:492
+msgid "Default linktext (Shadowbox):"
+msgstr "Standard-Linktext (Shadowbox):"
+
+#: trunk/inc/inc.adminpanel.php:494
+#: trunk/inc/inc.options.php:43
+msgid "- Watch the video in an overlay -"
+msgstr "- Video in Shadowbox anschauen -"
+
+#: trunk/inc/inc.adminpanel.php:496
+msgid "Default linktext (Popup):"
+msgstr "Standard-Linktext (Popup):"
+
+#: trunk/inc/inc.adminpanel.php:498
+#: trunk/inc/inc.options.php:44
+msgid "- Watch the video in a popup window -"
+msgstr "- Video in einem Popup anschauen -"
+
+#: trunk/inc/inc.adminpanel.php:506
+msgid "Flashvars"
+msgstr "Flashvars"
+
+#: trunk/inc/inc.adminpanel.php:509
+msgid "In this section you can overwrite the default values of the <a href=\"http://www.jeroenwijering.com/?item=Supported_Flashvars\">flashvars</a> supported by the <a href=\"http://www.jeroenwijering.com/?item=JW_FLV_Media_Player\">JW FLV Media Player</a>.Some flashvars are not available in this section for compatibility purposes.Empty fields result in default values.<br /><small>(Inspired by JW's <a href=\"http://www.jeroenwijering.com/?page=wizard&example=91\">Setup Wizard</a>)</small>"
+msgstr "In dieser Sektion k&ouml;nnen Sie die Standardwerte der vom <a href=\"http://www.jeroenwijering.com/?item=JW_FLV_Media_Player\">JW FLV Media Player</a> unterst&uuml;tzten <a href=\"http://www.jeroenwijering.com/?item=Supported_Flashvars\">Flashvars</a> ändern. Einige Flashvars werden aus Kompatibilit&auml;tsgr&uuml;nden nicht angezeigt. Leere Felder resultieren in Standardwerte.<br /><small>(Inspiriert von JWs <a href=\"http://www.jeroenwijering.com/?page=wizard&example=91\">Setup Wizard</a>)</small>"
+
+#: trunk/inc/inc.adminpanel.php:513
+msgid "The basics"
+msgstr "Basiskonfiguration"
+
+#: trunk/inc/inc.adminpanel.php:515
+msgid "The location of the mediaplayer.swf or imagerotator.swf"
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:518
+msgid "The overall height of the player/rotator."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:521
+msgid "The overall width of the player/rotator."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:524
+msgid "The location of the file to play. Can be a single file or a playlist."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:527
+msgid "The url of a preview image. With playlists, set these in the XML."
+msgstr "Der Pfad zum Vorschaubild."
+
+#: trunk/inc/inc.adminpanel.php:530
+msgid "The RTMP stream identifier. With playlists, set these in the XML."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:533
+msgid "Show a searchbar below the player."
+msgstr "Eine Suchleiste unterhalb des Players anzeigen."
+
+#: trunk/inc/inc.adminpanel.php:543
+msgid "The colors"
+msgstr "Farbeinstellungen"
+
+#: trunk/inc/inc.adminpanel.php:545
+msgid "Background color of the controls, in HEX format."
+msgstr "Hintergrundfarben der Bedienelemente, im HEX-Format."
+
+#: trunk/inc/inc.adminpanel.php:549
+msgid "Texts &amp; buttons color of the controls, in HEX format."
+msgstr "Farben der Texte und Knöpfe der Bedienelemente, im HEX-Format."
+
+#: trunk/inc/inc.adminpanel.php:553
+msgid "Rollover color of the controls, in HEX format."
+msgstr "Rollover-Effekt-Farben der Bedienelemente, im HEX-Format."
+
+#: trunk/inc/inc.adminpanel.php:557
+msgid "Color of the display area, in HEX format."
+msgstr "Farbe der Anzeigenfläche, im HEX-Format."
+
+#: trunk/inc/inc.adminpanel.php:565
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:220
+msgid "Display appearance"
+msgstr "Anzeigenfläche"
+
+#: trunk/inc/inc.adminpanel.php:567
+msgid "Set this to an image put as a watermark in the top right corner."
+msgstr "Setzten Sie dies auf eine Grafik, die als Wasserzeichen in der oberen rechten Ecke erscheint."
+
+#: trunk/inc/inc.adminpanel.php:570
+msgid "Sets how to stretch images and movies to fit the display."
+msgstr "Setzt das Strecken von Bildern und Filmen fest."
+
+#: trunk/inc/inc.adminpanel.php:578
+msgid "Set this to true to show a (fake) equalizer at the bottom of the display. Nice for MP3 files."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:584
+msgid "Set this to false to hide the activity icon and play button in the display."
+msgstr "Setzen Sie dies auf false, um die Aktivitäts-Icons und den Play-Button zu verstecken."
+
+#: trunk/inc/inc.adminpanel.php:590
+msgid "Set this to the transition you want to use for playlists."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:608
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:279
+msgid "Controlbar appearance"
+msgstr "Bedienelemte"
+
+#: trunk/inc/inc.adminpanel.php:610
+msgid "Set this to false to disable the controlbar."
+msgstr "Setzen Sie dies auf false, um die Bedienelement-Leiste zu verstecken."
+
+#: trunk/inc/inc.adminpanel.php:616
+msgid "Set this to true to show a stop button in the controlbar."
+msgstr "Setzen Sie dies auf true, um den Stop-Button anzuzeigen."
+
+#: trunk/inc/inc.adminpanel.php:622
+msgid "Set this to false to hide the elapsed/remaining digits in the controlbar."
+msgstr "Setzen Sie dies auf false, um die Ziffernanzeige (elapsed/remeining) zu verstecken."
+
+#: trunk/inc/inc.adminpanel.php:628
+msgid "Set to true to show a link button in the controlbar."
+msgstr "Setzen Sie dies auf true, um den Link-Button anzuzeigen."
+
+#: trunk/inc/inc.adminpanel.php:634
+msgid "Set this to false to hide the fullscreen button."
+msgstr "Setzen Sie dies auf false, um den Fullscreen-Button zu verstecken."
+
+#: trunk/inc/inc.adminpanel.php:644
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:334
+msgid "Playlist appearance"
+msgstr "Playlists"
+
+#: trunk/inc/inc.adminpanel.php:646
+msgid "Set to true to scroll the playlist on rollover, hiding the scrollbar."
+msgstr "Setzen Sie dies auf true, um"
+
+#: trunk/inc/inc.adminpanel.php:652
+msgid "Set this smaller as the height to show a playlist below the display."
+msgstr "Setzen Sie dies niedriger als die Player-Höhe, um die Playlist unter der Anzeigenfläche einzublenden."
+
+#: trunk/inc/inc.adminpanel.php:655
+msgid "Set this smaller as the width to show a playlist to the right of the display."
+msgstr "Setzen Sie dies niedriger als die PlayerBreite, um die Playlist rechts neben der Anzeigenfläche einzublenden."
+
+#: trunk/inc/inc.adminpanel.php:658
+msgid "If you have preview images in your playlist, set this to true to show them."
+msgstr "Wenn Sie Vorschaubilder in Ihrer Playlist haben, setzen Sie dies auf true."
+
+#: trunk/inc/inc.adminpanel.php:668
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:369
+msgid "Playback behaviour"
+msgstr "Abspielverhalten"
+
+#: trunk/inc/inc.adminpanel.php:670
+msgid "Assigns a synced MP3. With the player and playlists, set these in the XML."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:673
+msgid "Set to true in the player to automatically start playing on page load."
+msgstr "Setzen Sie dies auf true, um den Player automatisch beim Laden der Seite zu starten."
+
+#: trunk/inc/inc.adminpanel.php:679
+msgid "Sets the number of seconds an FLV is buffered before starting."
+msgstr "Setzt die Anzahl der Sekunden fest, die eine *.flv-Datei gepuffert wird."
+
+#: trunk/inc/inc.adminpanel.php:682
+msgid "Assigns closed captions TimedText file. With playlists, set these in the XML."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:685
+msgid "Set this to an FLV fallback if you stream an MP4 file."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:688
+msgid "Set to true to repeat playback, to list to playback the entire playlist once."
+msgstr "Setzen Sie hier fest, ob und wie das Abspielen wiederholt werden soll."
+
+#: trunk/inc/inc.adminpanel.php:695
+msgid "Sets the number of seconds an image is played back."
+msgstr "Setzt fest, wie lange ein Bild angezeigt wird."
+
+#: trunk/inc/inc.adminpanel.php:698
+msgid "Set this to false to playback the playlist sequentially instead of shuffled."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:704
+msgid "Only for the mediaplayer. Set this to false to turn of the smoothing of video. Quality will decrease, but performance will increase. Good for HD files and slower computers."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:710
+msgid "Sets the startup volume for playback of sounds/movies."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:716
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:440
+msgid "External communication"
+msgstr "Externe Kommunikation"
+
+#: trunk/inc/inc.adminpanel.php:718
+msgid "Set this to true to enable javascript interaction."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:724
+msgid "Use this to give each player / rotator a unique ID."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:727
+msgid "Set this to analytics or a serverside script that can process statistics."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:730
+msgid "Set this to an XML with items you want to recommend, just like YouTube."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:733
+msgid "Set this to lighttpd or the URL of a script to use for http streaming."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:736
+msgid "Force the type of file you play if autodetection doesn't work."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:745
+msgid "Set this to an external URL. With playlists, set links in the XML."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:748
+msgid "Set this to true to make a click on the display result in a jump to the link."
+msgstr ""
+
+#: trunk/inc/inc.adminpanel.php:754
+msgid "Set this to the frame you want hyperlinks to open in."
+msgstr "Setzen Sie dies auf das Frame, in dem Links geauml;ffnet werden sollen."
+
+#: trunk/inc/inc.adminpanel.php:764
+msgid "Update Settings"
+msgstr "Einstellungen aktualisieren"
+
+#: trunk/inc/inc.functions.php:482
+msgid "Watch it at"
+msgstr "Guck's bei"
+
+#: trunk/inc/inc.functions.php:878
+#: trunk/inc/inc.mediamanager.php:102
+#: trunk/inc/inc.mediamanager.php:145
+msgid "Image"
+msgstr "Bild"
+
+#: trunk/inc/inc.functions.php:879
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:90
+msgid "Media"
+msgstr "Media"
+
+#: trunk/inc/inc.functions.php:880
+#: trunk/inc/inc.mediamanager.php:105
+#: trunk/inc/inc.mediamanager.php:148
+msgid "Type"
+msgstr "Typ"
+
+#: trunk/inc/inc.functions.php:882
+#: trunk/inc/inc.mediamanager.php:107
+#: trunk/inc/inc.mediamanager.php:147
+msgid "Link"
+msgstr "Link"
+
+#: trunk/inc/inc.functions.php:883
+#: trunk/inc/inc.mediamanager.php:108
+#: trunk/inc/inc.mediamanager.php:156
+msgid "Album"
+msgstr "Album"
+
+#: trunk/inc/inc.functions.php:884
+#: trunk/inc/inc.mediamanager.php:109
+#: trunk/inc/inc.mediamanager.php:154
+msgid "Captions"
+msgstr "Untertitel"
+
+#: trunk/inc/inc.functions.php:885
+#: trunk/inc/inc.mediamanager.php:110
+#: trunk/inc/inc.mediamanager.php:155
+msgid "Audio"
+msgstr "Audio"
+
+#: trunk/inc/inc.functions.php:890
+#: trunk/inc/inc.mediamanager.php:233
+#: trunk/inc/inc.mediamanager.php:255
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:101
+msgid "No media"
+msgstr "Keine Medien"
+
+#: trunk/inc/inc.functions.php:945
+#: trunk/inc/inc.mediamanager.php:101
+#: trunk/inc/inc.mediamanager.php:199
+#: trunk/inc/inc.mediamanager.php:227
+msgid "ID"
+msgstr "ID"
+
+#: trunk/inc/inc.functions.php:946
+#: trunk/inc/inc.mediamanager.php:103
+#: trunk/inc/inc.mediamanager.php:144
+#: trunk/inc/inc.mediamanager.php:200
+#: trunk/inc/inc.mediamanager.php:228
+#: trunk/inc/inc.mediamanager.php:269
+#: trunk/inc/inc.widgets.php:159
+msgid "Title"
+msgstr "Titel"
+
+#: trunk/inc/inc.functions.php:947
+#: trunk/inc/inc.mediamanager.php:157
+#: trunk/inc/inc.mediamanager.php:201
+#: trunk/inc/inc.mediamanager.php:270
+msgid "Attributes"
+msgstr "Attribute"
+
+#: trunk/inc/inc.functions.php:952
+#: trunk/inc/inc.mediamanager.php:246
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:84
+msgid "No playlists"
+msgstr "Keine Playlists"
+
+#: trunk/inc/inc.mediamanager.php:104
+#: trunk/inc/inc.mediamanager.php:143
+#: trunk/inc/inc.widgets.php:166
+#: trunk/inc/inc.widgets.php:208
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:47
+msgid "URL"
+msgstr "URL"
+
+#: trunk/inc/inc.mediamanager.php:113
+#: trunk/inc/inc.mediamanager.php:204
+msgid "ascending"
+msgstr "aufsteigend"
+
+#: trunk/inc/inc.mediamanager.php:114
+#: trunk/inc/inc.mediamanager.php:205
+msgid "descending"
+msgstr "absteigend"
+
+#: trunk/inc/inc.mediamanager.php:116
+#: trunk/inc/inc.mediamanager.php:207
+msgid "Filter"
+msgstr "Filter"
+
+#: trunk/inc/inc.mediamanager.php:132
+#: trunk/inc/inc.mediamanager.php:138
+msgid "Add medium"
+msgstr "Medium hinzuf&uuml;gen"
+
+#: trunk/inc/inc.mediamanager.php:133
+#: trunk/inc/inc.mediamanager.php:168
+msgid "Import medium"
+msgstr "Medium importieren"
+
+#: trunk/inc/inc.mediamanager.php:139
+msgid "Edit medium"
+msgstr "Medium bearbeiten"
+
+#: trunk/inc/inc.mediamanager.php:143
+msgid "Path to medium with heading http://"
+msgstr "Pfad zum Medium mit f&uuml;hrendem http://"
+
+#: trunk/inc/inc.mediamanager.php:144
+msgid "Title shown in playlists."
+msgstr "Der Titel wird in Playlists angezeigt."
+
+#: trunk/inc/inc.mediamanager.php:145
+msgid "Preview image and playlist thumbnail."
+msgstr "Vorschaubild und Playlist-Thumbnail."
+
+#: trunk/inc/inc.mediamanager.php:146
+msgid "Author will be displayed in playlists."
+msgstr "Der Autor wird in Playlists angezeigt."
+
+#: trunk/inc/inc.mediamanager.php:147
+msgid "Used for linkfromdisplay flashvar and within playlists."
+msgstr "Für die linkfromdisplay-Flashvariable und innerhalb von Playlisten genutzt."
+
+#: trunk/inc/inc.mediamanager.php:148
+msgid "You can force a type if the player has problems auto-detecting it."
+msgstr "Du kannst einen Dateityp erzwingen, falls die automatische Erkennung fehlschl&auml;gt."
+
+#: trunk/inc/inc.mediamanager.php:154
+msgid "This is used for subtitles."
+msgstr "Dies wird für Untertitel genutzt."
+
+#: trunk/inc/inc.mediamanager.php:155
+msgid "This is used for adding an audio comment."
+msgstr "Dies ist für Audio-Kommentare gedacht."
+
+#: trunk/inc/inc.mediamanager.php:156
+msgid "Set to 'commercial' to prevent the file from being skipped."
+msgstr "Auf 'commercial' setzen, um das &Uuml;berspringen der Datei zu verhindern."
+
+#: trunk/inc/inc.mediamanager.php:157
+#: trunk/inc/inc.mediamanager.php:270
+msgid "The attributes like width, height, flashvars, etc."
+msgstr "Attribute für den flash-Tag, z.B. width, height, flashvars, ..."
+
+#: trunk/inc/inc.mediamanager.php:170
+msgid "Select the medium to import from the WordPress database"
+msgstr "W&auml;hlen Sie das aus der WordPress-Datenbank zu importierende Medium"
+
+#: trunk/inc/inc.mediamanager.php:170
+msgid "Attachments"
+msgstr "Anh&auml;nge"
+
+#: trunk/inc/inc.mediamanager.php:229
+msgid "Add to playlist"
+msgstr "zu Playlist hinzuf&uuml;gen"
+
+#: trunk/inc/inc.mediamanager.php:260
+#: trunk/inc/inc.mediamanager.php:264
+msgid "Add playlist"
+msgstr "Playlist hinzuf&uuml;gen"
+
+#: trunk/inc/inc.mediamanager.php:265
+msgid "Edit playlist"
+msgstr "Playlist bearbeiten"
+
+#: trunk/inc/inc.mediamanager.php:269
+msgid "The title is just used internally"
+msgstr "Der Titel wird nur intern genutzt"
+
+#: trunk/inc/inc.options.php:32
+msgid "Either JavaScript is not active or you are using an old version of Adobe Flash Player. <a href=\"http://www.adobe.com/\">Please install the newest Flash Player</a>."
+msgstr "Entweder JavaScript ist nicht aktiviert, oder Sie benutzen eine alte Version von Adobe Flash Player. <a href=\"http://www.adobe.com/de/\">Installieren Sie bitte den aktuellsten Flash Player</a>. "
+
+#: trunk/inc/inc.widgets.php:155
+msgid "Empty fields will result in default values."
+msgstr "Leere Felder resultieren in Standardwerte."
+
+#: trunk/inc/inc.widgets.php:173
+#: trunk/inc/inc.widgets.php:214
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:51
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:122
+msgid "Width"
+msgstr "Breite"
+
+#: trunk/inc/inc.widgets.php:180
+#: trunk/inc/inc.widgets.php:220
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:53
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:125
+msgid "Height"
+msgstr "H&ouml;he"
+
+#: trunk/inc/inc.widgets.php:186
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:58
+msgid "Mode"
+msgstr "Modus"
+
+#: trunk/inc/inc.widgets.php:189
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:62
+msgid "&lt;object&gt;"
+msgstr "&lt;object&gt;"
+
+#: trunk/inc/inc.widgets.php:190
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:63
+msgid "SWFObject"
+msgstr "SWFObject"
+
+#: trunk/inc/inc.widgets.php:191
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:64
+msgid "SWFObject (IE only)"
+msgstr "SWFObject (nur IE)"
+
+#: trunk/inc/inc.widgets.php:192
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:65
+msgid "Shadowbox"
+msgstr "Shadowbox"
+
+#: trunk/inc/inc.widgets.php:193
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:66
+msgid "Popup"
+msgstr "Popup"
+
+#: trunk/inc/inc.widgets.php:198
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:116
+msgid "Preview image"
+msgstr "Vorschaubild"
+
+#: trunk/inc/inc.widgets.php:202
+msgid "Force auto-load"
+msgstr "Auto-Load erzwingen"
+
+#: trunk/inc/inc.widgets.php:226
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:130
+msgid "Linktext"
+msgstr "Linktext"
+
+#: trunk/inc/inc.widgets.php:232
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:134
+msgid "Caption/Title"
+msgstr "Caption/Titel"
+
+#: trunk/inc/inc.widgets.php:238
+msgid "Text"
+msgstr "Text"
+
+#: trunk/inc/inc.widgets.php:241
+msgid "Before flash"
+msgstr "Vor Flash"
+
+#: trunk/inc/inc.widgets.php:242
+msgid "After flash"
+msgstr "Nach Flash"
+
+#: trunk/inc/inc.widgets.php:250
+msgid "Advanced settings"
+msgstr "Erweiterte Einstellungen"
+
+#: trunk/inc/inc.widgets.php:250
+msgid "see <a href=\"http://wordpress.org/extend/plugins/pb-embedflash/installation/\" target=\"_blank\">usage</a>"
+msgstr "siehe <a href=\"http://wordpress.org/extend/plugins/pb-embedflash/installation/\" target=\"_blank\">Benutzung</a>"
+
+#: trunk/inc/inc.widgets.php:265
+msgid "A widget to display any flash content easily"
+msgstr "Ein Widget, dass Flash-Inhalte auf einfache Weise darstellt"
+
+#: trunk/inc/inc.widgets.php:267
+msgid "pb-embedFlash Widget"
+msgstr "pb-embedFlash Widgets"
+
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:33
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:513
+msgid "Insert"
+msgstr "Einf&uuml;gen"
+
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:34
+msgid "Shadowbox & Popup"
+msgstr "Shadowbox & Popup"
+
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:35
+msgid "JW FLV MP"
+msgstr "JW FLV MP"
+
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:43
+msgid "Flash content"
+msgstr "Flash-Inhalt"
+
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:71
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:151
+msgid "Playlist"
+msgstr "Playlist"
+
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:113
+msgid "Shadowbox &amp; Popup settings"
+msgstr "Shadowbox &amp; Popup-Einstellungen"
+
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:118
+msgid "Force preview image"
+msgstr "Vorschaubild erzwingen"
+
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:138
+msgid "optional, but set both of them if used"
+msgstr "optional, aber bei Benutzung beide angeben"
+
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:147
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:160
+msgid "Basics"
+msgstr "Basis"
+
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:148
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:185
+msgid "Colors"
+msgstr "Farben"
+
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:149
+msgid "Display"
+msgstr "Anzeige"
+
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:150
+msgid "Controls"
+msgstr "Bedienelemte"
+
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:152
+msgid "Playback"
+msgstr "Abspielen"
+
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:153
+msgid "Extern"
+msgstr "Extern"
+
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:160
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:185
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:220
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:279
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:334
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:369
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:440
+msgid "JW FLV Media Player settings"
+msgstr "JW FLV Media Player-Einstellungen"
+
+#: trunk/tinymce3plugin/pb-embedFlash-tinymceplugin.php:501
+msgid "Use this to overwrite the values defined in <em>Settings/pb-embedFlash</em>"
+msgstr "Nutze dies, um  in <em>Einstellungen/pb-embedFlash</em> festgelegte Standardwerte zu überschreiben"
+
