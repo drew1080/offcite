@@ -27,4 +27,6 @@ wp-content/uploads/2009/12/Ross_Wimer.flv
 wp-content/uploads/2009/12/Altman-Final.flv
 wp-content/uploads/2009/07/Rock-final.flv
 wp-content/movies/heller.flv
-
+wp-content/w3tc/dbcache/
+wp-content/w3tc/objectcache/
+wp-content/w3tc/pgcache/
