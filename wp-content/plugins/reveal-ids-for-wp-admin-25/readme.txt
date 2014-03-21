@@ -1,10 +1,12 @@
-=== Reveal IDs ===
+﻿=== Reveal IDs ===
 Contributors: Alphawolf
 Donate link: http://www.schloebe.de/donate/
-Tags: reveal, id, wp-admin, hidden, category, post, page, media, links, capability, user, restore, comments
-Requires at least: 2.5
-Tested up to: 3.1.2
+Tags: reveal, id, wp-admin, hidden, category, post, page, media, links, capability, user, restore, comments, taxonomy, custom posts
+Requires at least: 3.0
+Tested up to: 3.9
 Stable tag: trunk
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 What this plugin does is to reveal most removed IDs on admin pages, as it was in versions prior to 2.5.
 
@@ -16,8 +18,10 @@ What this plugin does is to reveal most removed entry IDs on admin pages, showin
 
 **Features:**
 
-* Following IDs can be revealed: Posts, Pages, Categories, Links, Media, Users, Comments, Link categories, Tags (WP 2.8 and above)
-* Each ID can be de-/activated seperately, plus you can **allow/permit user roles to see the IDs**
+* Following IDs can be revealed: posts, pages, categories, links, media, users, comments, link categories, custom taxonomies, custom post types, tags
+* Sortable columns for WP 3.1 or higher
+
+[Developer on Google+](https://plus.google.com/118074611982254715031 "Developer on Google+") | [Developer on Twitter](http://twitter.com/wpseek "Developer on Twitter")
 
 **Included languages:**
 
@@ -33,8 +37,9 @@ What this plugin does is to reveal most removed entry IDs on admin pages, showin
 * Polish (pl_PL) (Thanks for contributing polish language goes to Simivar)
 * Romanian (ro_RO) (Thanks for contributing romanian language goes to [Anunturi Jibo](http://www.jibo.ro))
 * Georgian (ge_KA) (Thanks for contributing georgian language goes to [Online Casino Bluebook](http://www.onlinecasinobluebook.com/))
+* Swedish (sv_SE) (Thanks for contributing swedish language goes to [Tor-Bjorn Fjellner](http://fjellner.com/))
 
-**Want update feeds, code documentation and more? Visit [extend.schloebe.de](http://extend.schloebe.de)**
+**Looking for more WordPress plugins? Visit [www.schloebe.de/portfolio/](http://www.schloebe.de/portfolio/)**
 
 == Frequently Asked Questions ==
 
@@ -48,6 +53,39 @@ None.
 1. Installation finished.
 
 == Changelog ==
+
+= 1.4.5 =
+* Fixed a 'Redefining already defined constructor' bug that occured on several configurations
+* Prepwork for Language Packs
+
+= 1.4.1 =
+* Increased width and added word-wrap for ID columns (for long IDs)
+
+= 1.4.0 =
+* Sortable columns for WP 3.1 or higher
+
+= 1.3.0 =
+* Complete Code rewrite
+* Full wupport for custom post types
+* Full support for custom taxonomies
+
+= 1.2.7 =
+* Plugin now requires at least 2.6
+* Readme.txt updated to be more compliant with the readme.txt standard
+* Moved screenshots off the package to the assets/ folder
+
+= 1.2.6 =
+* Removed capability options. If you don't want to see IDs on a particular panel, just remove them via Screen Options.
+* Issues with SSL fixed
+
+= 1.2.5 =
+* Maintenance Update
+
+= 1.2.4 =
+* Maintenance Update
+
+= 1.2.3 =
+* Fixed ID columns so that other plugins' custom columns won't be empty anymore
 
 = 1.2.2 =
 * Added georgian localization (Thanks to Kasia!)
