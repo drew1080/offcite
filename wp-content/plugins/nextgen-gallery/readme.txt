@@ -2,7 +2,7 @@
 Contributors: photocrati
 Tags:gallery,image,images,photo,photos,picture,pictures,slideshow,flash,media,thumbnails,photo-albums,nextgen-gallery,nextgen
 Requires at least: 3.6.1
-Tested up to: 3.8.1
+Tested up to: 3.9.0
 Stable tag: trunk
 License: GPLv2
 
@@ -198,6 +198,10 @@ For more information, feel free to visit the official website for the NextGEN Ga
 
 
 == Changelog ==
+
+= V2.0.61 - 04.01.2014 =
+* Fixed:   Compatibility with WP 3.9
+* Fixed:   Exception thrown when using Reset button
 
 = V2.0.59 - 03.18.2014 =
 * Changed: Separated pope_module_list from ngg_options record in options table
