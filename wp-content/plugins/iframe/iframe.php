@@ -1,40 +1,54 @@
 <?php
 /*
 Plugin Name: iframe
-Plugin URI: http://web-profile.com.ua/wordpress/plugins/iframe/
-Description: Plugin shows iframe with [iframe src="http://player.vimeo.com/video/3261363" width="100%" height="480"] shortcode.
-Version: 2.2
+Plugin URI: http://wordpress.org/plugins/iframe/
+Description: [iframe src="http://www.youtube.com/embed/A3PDXmYoF5U" width="100%" height="480"] shortcode
+Version: 2.8
 Author: webvitaly
-Author Email: webvitaly(at)gmail.com
-Author URI: http://web-profile.com.ua/wordpress/
+Author URI: http://web-profile.com.ua/wordpress/plugins/
+License: GPLv3
 */
 
-if ( !function_exists( 'iframe_embed_shortcode' ) ) :
 
-	function iframe_enqueue_script() {
+if ( ! function_exists( 'iframe_unqprfx_embed_shortcode' ) ) :
+
+	function iframe_unqprfx_enqueue_script() {
 		wp_enqueue_script( 'jquery' );
 	}
-	add_action('wp_enqueue_scripts', 'iframe_enqueue_script');
-				
-	function iframe_embed_shortcode($atts, $content = null) {
+	add_action( 'wp_enqueue_scripts', 'iframe_unqprfx_enqueue_script' );
+	
+	
+	function iframe_unqprfx_embed_shortcode( $atts, $content = null ) {
 		$defaults = array(
+			'src' => 'http://www.youtube.com/embed/A3PDXmYoF5U',
 			'width' => '100%',
 			'height' => '480',
 			'scrolling' => 'no',
 			'class' => 'iframe-class',
 			'frameborder' => '0'
 		);
-		// add defaults
-		foreach ($defaults as $default => $value) {
-			if (!array_key_exists($default, $atts)) {
+
+		foreach ( $defaults as $default => $value ) { // add defaults
+			if ( ! @array_key_exists( $default, $atts ) ) { // hide warning with "@" when no params at all
 				$atts[$default] = $value;
 			}
 		}
-		// special case maps
-		$src_cut = substr($atts["src"], 0, 35);
-		if(strpos($src_cut, 'maps.google' )){
-			$atts["src"] .= '&output=embed';
+
+		// get_params_from_url
+		if( isset( $atts["get_params_from_url"] ) && ( $atts["get_params_from_url"] == '1' || $atts["get_params_from_url"] == 1 || $atts["get_params_from_url"] == 'true' ) ) {
+			if( $_GET != NULL ){
+				if( strpos( $atts["src"], '?' ) ){ // if we already have '?' and GET params
+					$encode_string = '&';
+				}else{
+					$encode_string = '?';
+				}
+				foreach( $_GET as $key => $value ){
+					$encode_string .= $key.'='.$value.'&';
+				}
+			}
+			$atts["src"] .= $encode_string;
 		}
+
 		$html = '';
 		if( isset( $atts["same_height_as"] ) ){
 			$same_height_as = $atts["same_height_as"];
@@ -52,17 +66,16 @@ if ( !function_exists( 'iframe_embed_shortcode' ) ) :
 				}
 				$html .= '
 					<script>
-					jQuery(document).ready(function($) {
+					jQuery(function($){
 						var target_height = $(' . $target_selector . ').height();
 						$("iframe.' . $atts["class"] . '").height(target_height);
-						//alert(target_height);
 					});
 					</script>
 				';
 			}else{ // set the actual height of the iframe (show all content of the iframe without scroll)
 				$html .= '
 					<script>
-					jQuery(document).ready(function($) {
+					jQuery(function($){
 						$("iframe.' . $atts["class"] . '").bind("load", function() {
 							var embed_height = $(this).contents().find("body").height();
 							$(this).height(embed_height);
@@ -72,9 +85,9 @@ if ( !function_exists( 'iframe_embed_shortcode' ) ) :
 				';
 			}
 		}
-        $html .= "\n".'<!-- Iframe plugin v.2.1 (wordpress.org/extend/plugins/iframe/) -->'."\n";
+        $html .= "\n".'<!-- iframe plugin v.2.8 wordpress.org/plugins/iframe/ -->'."\n";
 		$html .= '<iframe';
-        foreach ($atts as $attr => $value) {
+        foreach( $atts as $attr => $value ) {
 			if( $attr != 'same_height_as' ){ // remove some attributes
 				if( $value != '' ) { // adding all attributes
 					$html .= ' ' . $attr . '="' . $value . '"';
@@ -83,9 +96,19 @@ if ( !function_exists( 'iframe_embed_shortcode' ) ) :
 				}
 			}
 		}
-		$html .= '></iframe>';
+		$html .= '></iframe>'."\n";
 		return $html;
 	}
-	add_shortcode('iframe', 'iframe_embed_shortcode');
+	add_shortcode( 'iframe', 'iframe_unqprfx_embed_shortcode' );
 	
-endif;
+
+	function iframe_unqprfx_plugin_meta( $links, $file ) { // add 'Plugin page' and 'Donate' links to plugin meta row
+		if ( strpos( $file, 'iframe.php' ) !== false ) {
+			$links = array_merge( $links, array( '<a href="http://web-profile.com.ua/wordpress/plugins/iframe/" title="Plugin page">Iframe</a>' ) );
+			$links = array_merge( $links, array( '<a href="http://web-profile.com.ua/donate/" title="Support the development">Donate</a>' ) );
+		}
+		return $links;
+	}
+	add_filter( 'plugin_row_meta', 'iframe_unqprfx_plugin_meta', 10, 2 );
+	
+endif; // end of if(function_exists('iframe_unqprfx_embed_shortcode'))
