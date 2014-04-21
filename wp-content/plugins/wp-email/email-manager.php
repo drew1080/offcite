@@ -1,7 +1,7 @@
 <?php
 /**
- * WordPress 2.8 Plugin: WP-EMail 2.50
- * Copyright (c) 2009 Lester "GaMerZ" Chan
+ * WordPress Plugin: WP-EMail
+ * Copyright (c) 2012 Lester "GaMerZ" Chan
  *
  * File Written By:
  * - Lester "GaMerZ" Chan
@@ -159,7 +159,6 @@ $email_logs = $wpdb->get_results("SELECT * FROM $wpdb->email ORDER BY $email_sor
 <?php if(!empty($text)) { echo '<!-- Last Action --><div id="message" class="updated fade"><p>'.$text.'</p></div>'; } ?>
 <!-- Manage E-Mail -->
 <div class="wrap">
-	<div id="icon-wp-email" class="icon32"><br /></div>
 	<h2><?php _e('Manage E-Mail', 'wp-email'); ?></h2>
 	<h3><?php _e('E-Mail Logs', 'wp-email'); ?></h3>
 	<p><?php printf(__('Displaying <strong>%s</strong> To <strong>%s</strong> Of <strong>%s</strong> E-Mail Logs', 'wp-email'), number_format_i18n($display_on_page), number_format_i18n($max_on_page), number_format_i18n($total_email)); ?></p>
@@ -287,7 +286,7 @@ $email_logs = $wpdb->get_results("SELECT * FROM $wpdb->email ORDER BY $email_sor
 			}
 		?>
 	<br />
-	<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="get">
+	<form action="<?php echo admin_url('admin.php?page='.plugin_basename(__FILE__)); ?>" method="get">
 		<table class="widefat">
 			<tr>
 				<td>
@@ -357,7 +356,7 @@ $email_logs = $wpdb->get_results("SELECT * FROM $wpdb->email ORDER BY $email_sor
 	<h3><?php _e('Delete E-Mail Logs', 'wp-email'); ?></h3>
 	<br style="clear" />
 	<div align="center">
-		<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>?page=<?php echo plugin_basename(__FILE__); ?>">
+		<form method="post" action="<?php echo admin_url('admin.php?page='.plugin_basename(__FILE__)); ?>">
 			<strong><?php _e('Are You Sure You Want To Delete All E-Mail Logs?', 'wp-email'); ?></strong><br /><br />
 			<input type="checkbox" name="delete_logs_yes" value="yes" />&nbsp;<?php _e('Yes', 'wp-email'); ?><br /><br />
 			<input type="submit" name="delete_logs" value="<?php _e('Delete', 'wp-email'); ?>" class="button" onclick="return confirm('<?php _e('You Are About To Delete All E-Mail Logs\nThis Action Is Not Reversible.\n\n Choose [Cancel] to stop, [OK] to delete.', 'wp-email'); ?>')" />

@@ -10,18 +10,49 @@ class Debug_Bar_Console extends Debug_Bar_Panel {
 		$this->set_visible( true );
 	}
 
-	function render() { ?>
-		<form id="debug-bar-console">
+	function render() {
+		$modes = array(
+			'php' => __('PHP'),
+			'sql' => __('SQL'),
+		);
+
+		$mode = 'php';
+
+		?>
+		<form id="debug-bar-console" class="debug-bar-console-mode-<?php echo esc_attr( $mode ); ?>">
 		<input id="debug-bar-console-iframe-css" type="hidden"
 			value="<?php echo plugins_url( 'css/iframe.dev.css', __FILE__ ); ?>" />
 		<?php wp_nonce_field( 'debug_bar_console', '_wpnonce_debug_bar_console' ); ?>
-		<div id="debug-bar-console-wrap" class="debug-bar-console">
-			<textarea id="debug-bar-console-input" class="debug-bar-console"></textarea>
+		<div id="debug-bar-console-wrap">
+			<ul class="debug-bar-console-tabs">
+				<?php foreach ( $modes as $slug => $title ):
+					$classes = 'debug-bar-console-tab';
+					if ( $slug == $mode )
+						$classes .= ' debug-bar-console-tab-active';
+					?>
+					<li class="<?php echo esc_attr( $classes ); ?>">
+						<?php echo $title; ?>
+						<input type="hidden" value="<?php echo $slug; ?>" />
+					</li>
+				<?php endforeach; ?>
+			</ul>
+			<div id="debug-bar-console-submit">
+				<span><?php _e('Shift + Enter'); ?></span>
+				<a href="#"><?php _e('Run'); ?></a>
+			</div>
+			<div class="debug-bar-console-panel debug-bar-console-on-php">
+				<textarea id="debug-bar-console-input-php" class="debug-bar-console-input"><?php echo "<?php\n"; ?></textarea>
+			</div>
+			<div class="debug-bar-console-panel debug-bar-console-on-sql">
+				<textarea id="debug-bar-console-input-sql" class="debug-bar-console-input"></textarea>
+			</div>
 		</div>
-		<div id="debug-bar-console-output" class="debug-bar-console">
-			<iframe></iframe>
+		<div id="debug-bar-console-output">
+			<strong><?php _e('Output'); ?></strong>
+			<div class="debug-bar-console-panel">
+				<iframe></iframe>
+			</div>
 		</div>
-		<a href="#" id="debug-bar-console-submit"><?php _e('Run'); ?></a>
 		</form>
 		<?php
 	}
@@ -29,23 +60,38 @@ class Debug_Bar_Console extends Debug_Bar_Panel {
 	function ajax() {
 		global $wpdb;
 
-		check_admin_referer( 'debug_bar_console', 'nonce' );
+		if ( false === check_ajax_referer( 'debug_bar_console', 'nonce', false ) )
+			die();
 
-		if ( ! is_super_admin() )
+		if ( ! is_super_admin() || ! isset( $_POST['mode'] ) )
 			die();
 
 		$data = stripslashes( $_POST['data'] );
+		$mode = $_POST['mode'];
 
-		if ( preg_match( "/^\s*(SELECT|UPDATE|ALTER|DELETE|CREATE|INSERT)\s/i", $data ) ) {
+		if ( 'php' == $mode ) {
+			// Trim the data
+			$data = '?>' . trim( $data );
+
+			// Do we end the string in PHP?
+			$open  = strrpos( $data, '<?php' );
+			$close = strrpos( $data, '?>' );
+
+			// If we're still in PHP, ensure we end with a semicolon.
+			if ( $open > $close )
+				$data = rtrim( $data, ';' ) . ';';
+
+			eval( $data );
+			die();
+
+		} elseif ( 'sql' == $mode ) {
 			$data = explode( ";\n", $data );
 			foreach ( $data as $query ) {
+				$query = str_replace( '$wpdb->', $wpdb->prefix, $query );
 				$this->print_mysql_table( $wpdb->get_results( $query, ARRAY_A ), $query );
 			}
 			die();
 		}
-
-		eval( $data );
-		die();
 	}
 
 	function print_mysql_table( $data, $query='' ) {
@@ -77,4 +123,3 @@ class Debug_Bar_Console extends Debug_Bar_Panel {
 	}
 }
 
-?>
